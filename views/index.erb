@@ -1,0 +1,22 @@
+<div class="card-footer">
+  <h3 class="text-center">
+    Enter a word or phrase followed by an integer.
+  </h3>
+
+  <div class="mb-3 mx-auto w-75">
+    <form class=" input-group input-group-sm pb-1">
+      <input type="text" class="form-control" placeholder="Phrase" aria-label="" aria-describedby="basic-addon1" name="phrase">
+      <input type="text" class="form-control" placeholder="#" aria-label="" aria-describedby="basic-addon1" name="shift">
+      <div class="input-group-append">
+        <input type="submit" value="Encypt" class="btn btn-success">
+      </div>
+    </form>
+    <% if !@result.nil? %>
+      <div class="input-group input-group-sm">
+        <textarea class="form-control" aria-label="Result:" >
+          <%= @result %>
+        </textarea>
+      </div>
+    <% end %>
+  </div>
+</div>
